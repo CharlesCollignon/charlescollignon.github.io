@@ -14,7 +14,7 @@
 html,body {
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: hsla(18, 76%, 85%, 1);
   background: linear-gradient(60deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
   background: -moz-linear-gradient(60deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
@@ -30,20 +30,23 @@ h1, h2, h3, p {
       LAYOUT 
 ---------------*/
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 90vw;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
 }
+
 header {
   margin: 0 auto;
   text-align: center;
-  
 }
 
 h1 {
-  font-size: 10vw;
+  font-size: 3.5rem;
   font-weight: 200;
   color: var(--carolina-blue);
   margin-bottom: 0.1em;
@@ -55,17 +58,16 @@ h2 {
 }
 
 p {
-  font-size: 3vw;
+  font-size: 80%;
   margin: 1em 0;
   color: var(--carolina-blue);
 }
 
 .card {
   width: 50vw;
-  max-width: 600px;
+  max-width: 500px;
   text-align: center;
-  margin: 3em auto;
-  padding: 1em 0;
+  padding: 1em 2em;
   border-radius: 50px;
   background: #fcebe35b;
   box-shadow:  20px 20px 60px #d6c8c18e,
@@ -82,6 +84,7 @@ p {
 .list-inline {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 li {
