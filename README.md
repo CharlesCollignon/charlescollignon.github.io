@@ -4,4 +4,4 @@
 
 🖥 Currently in professional retraining, I am working hard to become a good front-end developer ! (JS, React, HTML, CSS)
 
-🌍 http://charlescollignon.com/
+🌍 https://www.charlescollignon.com/
