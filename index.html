@@ -1,42 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/photo profil retro 512px.jpg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Charles Collignon</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Charles Collignon</title>
-</head>
+  <body>
+    <section class="section section-header">
+      <div class="container">
+        <header>
+          <h1>Junior Front-End dev</h1>
+          <h2>on-going website redesign</h2>
+        </header>
 
-<body>
-  <div class="container">
-    <header>
-      <h1>Junior Front-End dev</h1>
-      <h2>on-going website redesign</h2>
-    </header>
+        <div class="contact-infos card">
+          <p>CHARLES COLLIGNON</p>
+          <p>+33 6 32 86 25 16</p>
+          <p>collignoncharles@gmail.com</p>
+        </div>
 
-    <div class="contact-infos card">
-      <p>CHARLES COLLIGNON</p>
-      <p>+33 6 32 86 25 16</p>
-      <p>collignoncharles@gmail.com</p>
-    </div>
+        <div class="stack card">
+          <p>Ruby on rails</p>
+          <p>HTML CSS</p>
+          <p>JS React</p>
+        </div>
 
-    <div class="stack card">
-      <p>Ruby on rails</p>
-      <p>HTML CSS</p>
-      <p>JS React</p>
-    </div>
+        <ul class="list-inline card">
+          <li>
+            <a href="https://github.com/CharlesCollignon" target="_blank"
+              ><i class="fab fa-git-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/charles-collignon/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <ul class="list-inline card">
-      <li><a href="https://github.com/CharlesCollignon" target="_blank"><i class="fab fa-git-square"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/charles-collignon/" target="_blank"><i
-            class="fab fa-linkedin"></i></a></li>
-    </ul>
-</div>
-</body>
+    <section class="section project-1 container">
+      <div class="card">
+        <h3 class="project-title">HEKA</h3>
+        <img class="image-content" src="images/heka-videoscreen.gif" alt="heka gif"></img>
+        <div class="body-content">
+          <p class="project-summary">
+            Fast delivery web app. Delivery of CDB products (oils, strain, food,
+            etc.)
+          </p>
+          <div class="project-techno">
+            <p>Ruby on Rail</p>
+            <p>SCSS, JS, AJAX, HTML</p>
+            <p>Cloudinary, Mapbox, Heroku, git & GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section project-2 container">
+      <div class="card">
+        <h3 class="project-title"><a href="https://www.charlescollignon.com/Snake-Game/" class="snake-link">This is Snake</a></h3>
+        <img class="image-content" src="images/snake-crop.gif" alt="snake gif"></img>
+        <div class="body-content">
+          <p class="project-summary">
+            Little snake. Responsive design
+          </p>
+          <div class="project-techno">
+            <p>Pure CSS, HTML, JS</p>
+            <p>git & GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-3 container">
+      <div class="card">
+        <h3 class="project-title"><a href="https://create-react-app-morpion.vercel.app/" class="morpion-link">Basic Morpion</a></h3>
+        <img class="image-content" src="images/react-morpion.gif" alt="morpion gif"></img>
+        <div class="body-content">
+          <p class="project-summary">
+            Simple Morpion with moves history and time travel. 
+          </p>
+          <div class="project-techno">
+            <p>Mini React project from <a href="https://fr.reactjs.org/tutorial/tutorial.html" class="react-tuto-morpion">Reactjs.org</a></p>
+            <p>Create React App</p>
+            <p>git & GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
 </html>

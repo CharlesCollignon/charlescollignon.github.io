@@ -3,27 +3,47 @@
 ---------------*/
 
 :root {
-  font-family: 'Heebo', sans-serif;
-  --unbleach-silk: #F6CFBE;
-  --linen-pale: #FCEBE3;
-  --uranian-blue: #B9DCF2;
-  --aero-blue: #6AB6E6;
-  --carolina-blue: #3C92C7;
+  font-family: "Heebo", sans-serif;
+  --unbleach-silk: #f6cfbe;
+  --linen-pale: #fcebe3;
+  --uranian-blue: #b9dcf2;
+  --aero-blue: #6ab6e6;
+  --carolina-blue: #3c92c7;
 }
 
-html,body {
+html,
+body {
   margin: 0;
   width: 100vw;
-  height: auto;
   background: hsla(18, 76%, 85%, 1);
-  background: linear-gradient(60deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-  background: -moz-linear-gradient(60deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-  background: -webkit-linear-gradient(60deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+  background: linear-gradient(
+    60deg,
+    hsla(18, 76%, 85%, 1) 0%,
+    hsla(203, 69%, 84%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    60deg,
+    hsla(18, 76%, 85%, 1) 0%,
+    hsla(203, 69%, 84%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    60deg,
+    hsla(18, 76%, 85%, 1) 0%,
+    hsla(203, 69%, 84%, 1) 100%
+  );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ------------
@@ -32,10 +52,8 @@ h1, h2, h3, p {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  width: 90vw;
-  height: 100vh;
+  width: 95vw;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -43,6 +61,10 @@ h1, h2, h3, p {
 header {
   margin: 0 auto;
   text-align: center;
+}
+
+.section {
+  margin-top: 50px;
 }
 
 h1 {
@@ -57,28 +79,34 @@ h2 {
   font-weight: 100;
 }
 
+h3 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--carolina-blue);
+  margin: 0;
+}
+
 p {
-  font-size: 80%;
+  font-size: 1em;
   margin: 1em 0;
   color: var(--carolina-blue);
 }
 
 .card {
-  width: 50vw;
+  width: 60vw;
   max-width: 500px;
   text-align: center;
   padding: 1em 2em;
+  margin: 1em 0;
   border-radius: 50px;
   background: #fcebe35b;
-  box-shadow:  20px 20px 60px #d6c8c18e,
-             -20px -20px 60px #ffffff7c;
+  box-shadow: 20px 20px 60px #d6c8c18e, -20px -20px 60px #ffffff7c;
   transition-duration: 0.5s;
 }
 
 .card:hover {
   transition-duration: 0.5s;
-  box-shadow:  20px 20px 60px #d6c8c1bb,
-             -20px -20px 60px #ffffffbd;
+  box-shadow: 20px 20px 60px #d6c8c1bb, -20px -20px 60px #ffffffbd;
 }
 
 .list-inline {
@@ -102,4 +130,26 @@ a:focus {
   transition-duration: 0.5s;
   color: var(--aero-blue);
   cursor: pointer;
+}
+
+/* ------------
+      SNAKE 
+---------------*/
+
+.snake-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* ------------
+      MORPION 
+---------------*/
+.react-tuto-morpion {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.morpion-link {
+  font-size: 1em;
 }
