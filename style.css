@@ -53,18 +53,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95vw;
   max-width: 600px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 header {
   margin: 0 auto;
   text-align: center;
+  padding-top: 2em;
 }
 
 .section {
-  margin-top: 50px;
+  margin-top: 1em;
 }
 
 h1 {
@@ -84,24 +85,36 @@ h3 {
   font-weight: 200;
   color: var(--carolina-blue);
   margin: 0;
+  margin-bottom: 0.75em;
 }
 
 p {
   font-size: 1em;
   margin: 1em 0;
   color: var(--carolina-blue);
+  letter-spacing: 1px;
+}
+
+img {
+  width: 80%;
+  margin-bottom: 0.75em;
 }
 
 .card {
-  width: 60vw;
+  width: 80vw;
   max-width: 500px;
   text-align: center;
   padding: 1em 2em;
-  margin: 1em 0;
+  margin: 2em 0;
   border-radius: 50px;
   background: #fcebe35b;
   box-shadow: 20px 20px 60px #d6c8c18e, -20px -20px 60px #ffffff7c;
   transition-duration: 0.5s;
+  box-sizing: border-box;
+}
+
+.fab {
+  font-size: 2em;
 }
 
 .card:hover {
@@ -121,7 +134,6 @@ li {
 }
 
 a {
-  font-size: 2rem;
   color: var(--carolina-blue);
 }
 
@@ -130,6 +142,20 @@ a:focus {
   transition-duration: 0.5s;
   color: var(--aero-blue);
   cursor: pointer;
+}
+
+/* ------------
+      CONTACT 
+---------------*/
+.contact-infos-clic:hover {
+  cursor: pointer;
+  scale: 110%;
+
+  transition-duration: 1s;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ------------
@@ -151,5 +177,13 @@ a:focus {
 }
 
 .morpion-link {
+  font-size: 1em;
+}
+
+/* ------------
+  TASK MANAGER 
+---------------*/
+
+.traversy {
   font-size: 1em;
 }
