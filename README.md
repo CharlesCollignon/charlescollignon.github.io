@@ -1,7 +1,7 @@
 ### Hi there 👋
 
-🤓 I am a french mechanical engineer becoming a web developer !
+🤓 I am a front end web developer !
 
-🖥 Currently in professional retraining, I am working hard to become a good front-end developer ! (JS, React, HTML, CSS)
+🖥 JS, React, HTML, CSS
 
 🌍 https://www.charlescollignon.com/
