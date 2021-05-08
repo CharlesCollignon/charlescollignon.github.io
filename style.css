@@ -69,8 +69,8 @@ header {
 }
 
 .fa-arrow-circle-up {
-  position: fixed;
-  top: 80vh;
+  position: sticky;
+  top: 90vh;
   left: 80vw;
   color: var(--carolina-blue);
   opacity: 0.3;
@@ -118,7 +118,7 @@ img {
   margin: 2em 0;
   border-radius: 50px;
   background: #fcebe35b;
-  box-shadow: 20px 20px 60px #d6c8c18e, -20px -20px 60px #ffffff7c;
+  box-shadow: 10px 10px 30px #d6c8c18e, -10px -10px 30px #ffffff7c;
   transition-duration: 0.5s;
   box-sizing: border-box;
 }
@@ -129,7 +129,7 @@ img {
 
 .card:hover {
   transition-duration: 0.5s;
-  box-shadow: 20px 20px 60px #d6c8c17a, -20px -20px 60px #ffffffa1;
+  box-shadow: 10px 10px 30px #d6c8c17a, -10px -10px 30px #ffffffa1;
 }
 
 .list-inline {
@@ -197,23 +197,6 @@ a:focus {
   animation: fondu 1s ease-in-out 0s 1 normal forwards;
 }
 
-/* .click-me {
-  color: #6ab6e636;
-  font-size: 5em;
-  width: 100%;
-  opacity: 0;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-/* .click-me:hover,
-.click-me:focus {
-  opacity: 0.6;
-} */
-
 .contact-infos-clic:hover,
 .contact-infos-clic:focus {
   cursor: pointer;
@@ -228,6 +211,14 @@ a:focus {
 .my-work-title {
   text-align: center;
   margin-top: 1em;
+}
+
+.stack {
+  animation: fondu 2s ease-in-out 0s 1 normal forwards;
+}
+
+.list-inline {
+  animation: fondu 3s ease-in-out 0s 1 normal forwards;
 }
 
 /* ------------
