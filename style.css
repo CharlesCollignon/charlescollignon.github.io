@@ -81,14 +81,12 @@ a {
 
 .intro-portfolio {
   text-align: center;
-  position: absolute;
-  top: 15%;
-  margin: 0;
-  padding: 0;
-}
-
-.title-loading {
-  margin-bottom: 0.5em;
+  /* padding: 2em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1000;
 }
 
 .btn {
@@ -98,11 +96,14 @@ a {
   background: transparent;
   border: none;
   color: var(--carolina-blue);
+  font-weight: 600;
+  letter-spacing: 1em;
 }
 
 .btn:hover,
 .btn:focus {
   transition-duration: 0.5s;
+  font-size: 100%;
   cursor: pointer;
   color: #255674;
 }
@@ -114,7 +115,9 @@ a {
 
 .container-loader {
   width: 80vw;
+  max-width: 500px;
   height: 80vw;
+  max-height: 500px;
   border-radius: 100%;
   background: linear-gradient(
     50deg,
@@ -124,6 +127,8 @@ a {
     hsla(203, 69%, 84%, 0.5) 100%
   );
   position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .loader:before {
@@ -138,7 +143,7 @@ a {
     0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px var(--linen-pale) inset,
     0 -3px 2px #ffffff71 inset, 0 2px 0px #ffffff80, 0 2px 3px #ffffff80,
     0 5px 5px #ffffff56, 0 10px 15px #ffffff60, 0 10px 20px 20px #fcebe33f;
-  filter: blur(20px);
+  filter: blur(10px);
   animation: 2s rotate linear infinite;
 }
 
@@ -265,45 +270,10 @@ a:focus {
 /* ------------
       CONTACT 
 ---------------*/
-@keyframes fondu {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.fadeOut {
-  animation: fadeOut 2s ease 0s 1 normal forwards;
-}
-
-.contacts {
-  animation: fondu 1s ease-in-out 0s 1 normal forwards;
-}
+/* .contact-infos-clic {
+  position: absolute;
+} */
 
 .contact-infos-clic:hover,
 .contact-infos-clic:focus {
@@ -312,21 +282,12 @@ a:focus {
 }
 
 .hidden {
-  animation: fondu 1s ease-in-out 0s 1 normal forwards;
   display: none;
 }
 
 .my-work-title {
   text-align: center;
   margin-top: 1em;
-}
-
-.stack {
-  animation: fondu 2s ease-in-out 0s 1 normal forwards;
-}
-
-.list-inline {
-  animation: fondu 3s ease-in-out 0s 1 normal forwards;
 }
 
 /* ------------
