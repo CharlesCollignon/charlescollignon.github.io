@@ -51,7 +51,7 @@ a {
 ---------------*/
 
 .loading-page {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -79,16 +79,49 @@ a {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
 }
 
+.intro-portfolio {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  margin: 0;
+  padding: 0;
+}
+
+.title-loading {
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: var(--carolina-blue);
+}
+
+.btn:hover,
+.btn:focus {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: #255674;
+}
+
+.btn:active {
+  background-color: var(--carolina-blue);
+  color: var(--linen-pale);
+}
+
 .container-loader {
-  width: 350px;
-  height: 350px;
+  width: 80vw;
+  height: 80vw;
   border-radius: 100%;
   background: linear-gradient(
-    165deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(220, 220, 220) 40%,
-    rgb(170, 170, 170) 98%,
-    rgb(10, 10, 10) 100%
+    50deg,
+    #f6cfbe96,
+    rgb(220, 220, 220) 30%,
+    #c2dcec54,
+    hsla(203, 69%, 84%, 0.5) 100%
   );
   position: absolute;
 }
@@ -99,13 +132,13 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  border-bottom: 0 solid #ffffff05;
+  border-bottom: 0 solid var(--aero-blue);
 
-  box-shadow: 0 -10px 20px 20px #ffffff40 inset,
-    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
-    0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
-    0 5px 5px #ffffff90, 0 10px 15px #ffffff60, 0 10px 20px 20px #ffffff40;
-  filter: blur(3px);
+  box-shadow: 0 -10px 20px 20px #fcebe341 inset,
+    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px var(--linen-pale) inset,
+    0 -3px 2px #ffffff71 inset, 0 2px 0px #ffffff80, 0 2px 3px #ffffff80,
+    0 5px 5px #ffffff56, 0 10px 15px #ffffff60, 0 10px 20px 20px #fcebe33f;
+  filter: blur(20px);
   animation: 2s rotate linear infinite;
 }
 
@@ -150,6 +183,12 @@ h1 {
   font-size: 3.5rem;
   font-weight: 200;
   color: var(--carolina-blue);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin: 0 1em;
+  }
 }
 
 h2 {
