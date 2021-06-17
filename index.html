@@ -5,7 +5,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="copyright" content="Charles Collignon">
-    <meta name="description" content="Front-end developer. React, JS, HTML, CSS">
+    <meta name="description" content="Frontend developer - Développeur Frontend. React, JS, HTML, CSS.">
     <meta name="robots" content="max-image-preview:large" />
     
     <link rel="stylesheet" href="style.css" />
@@ -21,7 +21,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Charles Collignon Front-End</title>
+    <title>Charles Collignon Frontend</title>
   </head>
 
   
@@ -39,64 +39,38 @@
     
 
     <header>
-      <h1>Junior Front-End dev</h1>
+      <img class="photo-profil" src="https://res.cloudinary.com/dwao1yqhc/image/upload/v1623955803/photo_profil_retro_512px_fzvog1.jpg" alt="photo profil"/>
+      <h1 class="main-title">Junior Front-End dev</h1>
     </header>
 
-    <section class="section section-header">
-      <div class="container">
-
-        <div class="contact-infos-clic card">
-          <p>CONTACT INFOS</p>
-        </div>
-
-        <div class="contacts hidden">  
-          <div class="contact-infos card">
-            <p>CHARLES COLLIGNON</p>
-            <p>+33 6 32 86 25 16</p>
-            <p>collignoncharles@gmail.com</p>
-          </div>
-          
-          <div class="stack card">
-            <p>Ruby on rails</p>
-            <p>HTML CSS JS</p>
-            <p>React</p>
-          </div>
-          
-          <ul class="list-inline card">
-            <li>
-              <a href="https://github.com/CharlesCollignon" target="_blank">
-                <i class="fab fa-git-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/charles-collignon/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-  
+    <section class="section buttons-group">
+      <button class="btn btn-header btn-who">Who am I ?</button>
+      <button class="btn btn-header btn-stack">My stack</button>
+      <button class="btn btn-header btn-infos">My infos</button>
     </section>
 
     <i class="fas fa-arrow-circle-up"></i>
+
 
     <h2 class="my-work-title">My work</h2>
           
     <section class="section project-1 container">
       <div class="card">
         <h3 class="project-title">HEKA</h3>
-        <img class="image-content" src="images/heka-videoscreen.gif" alt="heka gif" />
+        <video class="video-content" autoplay="true" loop="true"> 
+          <source src="https://res.cloudinary.com/dwao1yqhc/video/upload/v1623947757/heka_auxaym.mp4" autoplay="true" type="video/mp4" alt="heka video">
+        </video>
         <div class="body-content">
+          <h4>Infos</h4>
           <p class="project-summary">
             Fast delivery web app. Delivery of CDB products (oils, strain, food,
             etc.)
           </p>
           <div class="project-techno">
+            <h4>Stack</h4>
             <p>Ruby on Rails</p>
             <p>SCSS, JS, AJAX, HTML</p>
-            <p>Cloudinary, Mapbox, Heroku, git & GitHub</p>
+            <p>Cloudinary, Mapbox, Heroku</p>
           </div>
         </div>
       </div>
@@ -107,10 +81,12 @@
         <h3 class="project-title"><a href="https://www.charlescollignon.com/Snake-Game/" class="snake-link" target="_blank">This is Snake</a></h3>
         <img class="image-content" src="images/snake-crop.gif" alt="snake gif" />
         <div class="body-content">
+          <h4>Infos</h4>
           <p class="project-summary">
             Little snake. Responsive design
           </p>
           <div class="project-techno">
+            <h4>Stack</h4>
             <p>Pure CSS, HTML, JS</p>
             <p>git & GitHub</p>
           </div>
