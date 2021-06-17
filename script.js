@@ -1,21 +1,14 @@
 const contact = document.querySelector(".contact-infos-clic");
 const infosCards = document.querySelector(".hidden");
 const arrowTop = document.querySelector(".fa-arrow-circle-up");
-const btn = document.querySelector(".btn-enter");
+const btnEnter = document.querySelector(".btn-enter");
 const loadingPage = document.querySelector(".loading-page")
-
-// function myLoader() {
-//   loader.style.display = "none";
-// }
-// $(btn).on("click", function () {
-//   $(".loading-page").fadeOut(1000, "linear");
-// });
 
 function handleClick() {
   loadingPage.classList.add('zoomOut')
 }
 
-btn.addEventListener('click', handleClick)
+btnEnter.addEventListener('click', handleClick)
 
 
 function handleTop() {
