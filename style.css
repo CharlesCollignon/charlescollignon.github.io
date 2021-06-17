@@ -4,9 +4,9 @@
 
 :root {
   font-family: "Heebo", sans-serif;
-  --unbleach-silk: #f6cfbe;
+  --unbleach-silk: #f1dfd7;
   --linen-pale: #fcebe3;
-  --uranian-blue: #b9dcf2;
+  --uranian-blue: #c0dcee;
   --aero-blue: #6ab6e6;
   --carolina-blue: #3c92c7;
 }
@@ -15,23 +15,23 @@ html,
 body {
   margin: 0;
   width: 100vw;
-  background: hsla(18, 76%, 85%, 1);
+  background: rgb(255, 235, 227);
   background: linear-gradient(
     60deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
+    var(--unbleach-silk),
+    var(--uranian-blue)
   );
   background: -moz-linear-gradient(
     60deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
+    var(--unbleach-silk),
+    var(--uranian-blue)
   );
   background: -webkit-linear-gradient(
     60deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
+    var(--unbleach-silk),
+    var(--uranian-blue)
   );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f1dfd7", endColorstr="#B9DCF2", GradientType=1 );
 }
 
 h1,
@@ -60,7 +60,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: hsla(18, 76%, 85%, 1);
+  background: rgb(255, 238, 230);
   background: linear-gradient(
     60deg,
     hsla(18, 76%, 85%, 1) 0%,
@@ -89,15 +89,15 @@ a {
   z-index: 1000;
 }
 
-.btn {
+.btn-enter {
   margin: 0;
   text-decoration: none;
   text-transform: uppercase;
   background: transparent;
   border: none;
   color: var(--carolina-blue);
-  font-weight: 600;
-  letter-spacing: 1em;
+  /* font-weight: 600; */
+  letter-spacing: 0.8em;
 }
 
 .btn:hover,
