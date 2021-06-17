@@ -4,46 +4,77 @@
 
 :root {
   font-family: "Heebo", sans-serif;
-  --unbleach-silk: #f1dfd7;
-  --linen-pale: #fcebe3;
-  --uranian-blue: #c0dcee;
-  --aero-blue: #6ab6e6;
-  --carolina-blue: #3c92c7;
+  --white: #FAF9F9;
+  --light-grey: #CFCFCF;
+  --aero-blue: #2274A5;
+  --black: #0C1618;
 }
 
 html,
 body {
   margin: 0;
   width: 100vw;
-  background: rgb(255, 235, 227);
-  background: linear-gradient(
-    60deg,
-    var(--unbleach-silk),
-    var(--uranian-blue)
-  );
-  background: -moz-linear-gradient(
-    60deg,
-    var(--unbleach-silk),
-    var(--uranian-blue)
-  );
-  background: -webkit-linear-gradient(
-    60deg,
-    var(--unbleach-silk),
-    var(--uranian-blue)
-  );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f1dfd7", endColorstr="#B9DCF2", GradientType=1 );
+  background: var(--white);
 }
 
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  color: var(--black);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin: 0 1em;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  color: var(--black);
+  font-weight: 100;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--black);
+  margin: 0;
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1em;
+  margin: 1em 0;
+  color: var(--black);
+  letter-spacing: 1px;
 }
 
 /* ------------
@@ -60,28 +91,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 238, 230);
-  background: linear-gradient(
-    60deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    60deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    60deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
+  background: var(--white);
 }
 
 .intro-portfolio {
   text-align: center;
-  /* padding: 2em; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,22 +109,20 @@ a {
   text-transform: uppercase;
   background: transparent;
   border: none;
-  color: var(--carolina-blue);
-  /* font-weight: 600; */
-  letter-spacing: 0.8em;
+  color: var(--black);
+  letter-spacing: 0.5em;
 }
 
 .btn:hover,
 .btn:focus {
-  transition-duration: 0.5s;
-  font-size: 100%;
+  transition-duration: 0.2s;
   cursor: pointer;
-  color: #255674;
+  color: var(--light-grey);
 }
 
 .btn:active {
-  background-color: var(--carolina-blue);
-  color: var(--linen-pale);
+  background-color: var(--black);
+  color: var(--light-grey);
 }
 
 .container-loader {
@@ -119,13 +131,7 @@ a {
   height: 80vw;
   max-height: 500px;
   border-radius: 100%;
-  background: linear-gradient(
-    50deg,
-    #f6cfbe96,
-    rgb(220, 220, 220) 30%,
-    #c2dcec54,
-    hsla(203, 69%, 84%, 0.5) 100%
-  );
+  background: var(--white);  
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -139,10 +145,10 @@ a {
   border-radius: 100%;
   border-bottom: 0 solid var(--aero-blue);
 
-  box-shadow: 0 -10px 20px 20px #fcebe341 inset,
-    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px var(--linen-pale) inset,
+  box-shadow: 0 -10px 20px 20px #CFCFCF41 inset,
+    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px var(--light-grey) inset,
     0 -3px 2px #ffffff71 inset, 0 2px 0px #ffffff80, 0 2px 3px #ffffff80,
-    0 5px 5px #ffffff56, 0 10px 15px #ffffff60, 0 10px 20px 20px #fcebe33f;
+    0 5px 5px #ffffff56, 0 10px 15px #ffffff60, 0 10px 20px 20px #CFCFCF3f;
   filter: blur(10px);
   animation: 2s rotate linear infinite;
 }
@@ -152,6 +158,45 @@ a {
     transform: rotate(360deg);
   }
 }
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomOut {
+  0% {
+  opacity: 1;
+  }
+  
+  50% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  100% {
+  opacity: 0;
+  display: none;
+  }
+  }
+  @keyframes zoomOut {
+  0% {
+  opacity: 1;
+  }
+  50% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  100% {
+  opacity: 0;
+  display: none;
+  z-index: -1;
+  }
+  } 
 
 /* ------------
       LAYOUT 
@@ -179,48 +224,20 @@ header {
   position: sticky;
   top: 90vh;
   left: 80vw;
-  color: var(--carolina-blue);
+  color: var(--black);
   opacity: 0.3;
   font-size: 3em;
 }
 
-h1 {
-  font-size: 3.5rem;
-  font-weight: 200;
-  color: var(--carolina-blue);
-}
 
-@media (max-width: 600px) {
-  h1 {
-    margin: 0 1em;
-  }
-}
-
-h2 {
-  font-size: 3em;
-  color: var(--carolina-blue);
-  font-weight: 100;
-  margin: 0;
-}
-
-h3 {
-  font-size: 3rem;
-  font-weight: 200;
-  color: var(--carolina-blue);
-  margin: 0;
-  margin-bottom: 0.75em;
-}
-
-p {
-  font-size: 1em;
-  margin: 1em 0;
-  color: var(--carolina-blue);
-  letter-spacing: 1px;
-}
 
 img {
   width: 80%;
   margin-bottom: 0.75em;
+}
+
+video {
+  width: 100%;
 }
 
 .card {
@@ -230,19 +247,13 @@ img {
   padding: 2em 2em;
   margin: 2em 0;
   border-radius: 50px;
-  background: #fcebe35b;
-  box-shadow: 10px 10px 30px #d6c8c18e, -10px -10px 30px #ffffff7c;
+  background: #CFCFCF5b;
   transition-duration: 0.5s;
   box-sizing: border-box;
 }
 
 .fab {
   font-size: 2em;
-}
-
-.card:hover {
-  transition-duration: 0.5s;
-  box-shadow: 10px 10px 30px #d6c8c17a, -10px -10px 30px #ffffffa1;
 }
 
 .list-inline {
@@ -257,7 +268,7 @@ li {
 }
 
 a {
-  color: var(--carolina-blue);
+  color: var(--black);
 }
 
 a:hover,
@@ -268,27 +279,22 @@ a:focus {
 }
 
 /* ------------
-      CONTACT 
+      HEADER 
 ---------------*/
 
 /* .contact-infos-clic {
   position: absolute;
 } */
 
-.contact-infos-clic:hover,
-.contact-infos-clic:focus {
-  cursor: pointer;
-  scale: 110%;
+.btn-header {
+
 }
 
-.hidden {
-  display: none;
-}
 
-.my-work-title {
-  text-align: center;
-  margin-top: 1em;
-}
+
+
+
+
 
 /* ------------
       SNAKE 
