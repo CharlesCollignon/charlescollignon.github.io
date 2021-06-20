@@ -19,7 +19,6 @@ arrowTop.addEventListener("click", handleTop);
 
 
 // Hotjar Tracking Code for https://www.charlescollignon.com/ 
-
 (function(h,o,t,j,a,r){
     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
     h._hjSettings={hjid:2459115,hjsv:6};
