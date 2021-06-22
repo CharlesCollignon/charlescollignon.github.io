@@ -45,6 +45,7 @@ p {
 a {
   text-decoration: none;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 h1 {
@@ -142,7 +143,9 @@ button:focus {
   text-decoration: none;
   text-transform: uppercase;
   background: transparent;
-  border: none;
+  border: 1px solid var(--black);
+  border-radius: 2em;
+  padding: 1em 2em;
   color: var(--black);
   letter-spacing: 0.5em;
 }
@@ -151,12 +154,13 @@ button:focus {
 .btn:focus {
   transition-duration: 0.2s;
   cursor: pointer;
-  color: var(--light-grey);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .btn:active {
-  background-color: var(--black);
-  color: var(--light-grey);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .container-loader {
@@ -224,6 +228,7 @@ button:focus {
   max-width: 600px;
   margin: 0 auto;
   box-sizing: border-box;
+  text-align: justify;
 }
 
 header {
@@ -316,18 +321,39 @@ a:focus {
   flex-wrap: wrap;
 }
 
+
 .btn-header {
   padding: 0.75rem 2.5rem;
   border: none;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 1rem;
   margin: 1rem 0;
   text-decoration: none;
   transition-duration: 0.3s;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 2rem;
 }
 
-.btn-header:focus,
+.btn-active {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.display-infos {
+  display: none;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  height: 30vh;
+}
+
+.display-infos-active {
+  display: block;
+}
+
 .btn-header:hover {
   cursor: pointer;
   color: var(--white);
