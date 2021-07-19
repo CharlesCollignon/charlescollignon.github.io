@@ -4,14 +4,14 @@
 
 :root {
   font-family: "Heebo", sans-serif;
-  --white: #FAF9F9;
-  --light-grey: #CFCFCF;
-  --aero-blue: #2274A5;
-  --black: #0C1618;
+  --white: #faf9f9;
+  --light-grey: #cfcfcf;
+  --aero-blue: #2274a5;
+  --black: #0c1618;
 }
 
 * {
-outline: 0;
+  outline: 0;
 }
 
 html,
@@ -19,6 +19,7 @@ body {
   margin: 0;
   width: 100vw;
   background: var(--white);
+  overflow-x: hidden;
 }
 
 input,
@@ -26,7 +27,7 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 h1,
@@ -115,6 +116,11 @@ button:focus {
   padding: 0 0.75em;
 }
 
+video {
+  autoplay: true;
+  loop: true;
+}
+
 /* ------------
       LOADER 
 ---------------*/
@@ -145,7 +151,7 @@ button:focus {
   letter-spacing: 0.3rem;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .title-loading {
     font-size: 2rem;
     letter-spacing: 0;
@@ -162,6 +168,7 @@ button:focus {
   padding: 1em 2em;
   color: var(--black);
   letter-spacing: 0.5em;
+  transition-duration: 0.2s;
 }
 
 .btn:hover,
@@ -184,13 +191,13 @@ button:focus {
   max-height: 500px;
   border: 1px solid var(--black);
   border-radius: 100%;
-  background: var(--white);  
+  background: var(--white);
   position: absolute;
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .btn-enter {
     font-size: 0.75rem;
   }
@@ -198,7 +205,6 @@ button:focus {
   .intro-portfolio p {
     font-size: 0.75rem;
   }
-
 }
 
 .zoomOut {
@@ -208,29 +214,28 @@ button:focus {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
-  @-webkit-keyframes zoomOut {
+}
+@-webkit-keyframes zoomOut {
   0% {
-  opacity: 1;
+    opacity: 1;
   }
-  
 
   100% {
-  opacity: 0;
-  display: none;
+    opacity: 0;
+    display: none;
   }
-  }
-  @keyframes zoomOut {
+}
+@keyframes zoomOut {
   0% {
-  opacity: 1;
+    opacity: 1;
   }
- 
+
   100% {
-  opacity: 0;
-  display: none;
-  z-index: -1;
+    opacity: 0;
+    display: none;
+    z-index: -1;
   }
-  } 
+}
 
 /* ------------
       LAYOUT 
@@ -287,7 +292,7 @@ video {
   padding: 2em 2em;
   margin: 2em 0;
   border-radius: 50px;
-  background: #CFCFCF5b;
+  background: #cfcfcf5b;
   transition-duration: 0.5s;
   box-sizing: border-box;
 }
@@ -342,7 +347,6 @@ a:focus {
   flex-wrap: wrap;
 }
 
-
 .btn-header {
   padding: 0.75rem 2.5rem;
   border: none;
@@ -363,18 +367,18 @@ a:focus {
 
 .display-infos {
   display: none;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .display-infos-active {
   display: block;
 }
 
-.contacts-infos  {
+.contacts-infos {
   display: flex;
   flex-direction: column;
   align-items: center;
