@@ -261,7 +261,7 @@ header {
 }
 
 .fa-arrow-circle-up {
-  position: sticky;
+  position: fixed;
   top: 90vh;
   left: 80vw;
   color: var(--black);
@@ -399,6 +399,10 @@ a:focus {
   justify-content: space-around;
   width: 150px;
   margin-top: 1em;
+}
+
+.my-work-title {
+  margin-top: 3rem;
 }
 
 @media (max-width: 600px) {
